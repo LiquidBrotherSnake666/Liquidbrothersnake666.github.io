@@ -89,6 +89,37 @@ a {
 #geo{
     padding-right: 10px;
 }
+.dropbtn {
+display: inline;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 50px;
+  z-index: 1;
+ 
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.dropdown-content a:hover {background-color: #F3E5AB;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:     ;}
 </style>
 <body>
     <div>
@@ -105,12 +136,15 @@ a {
             <nav class="myNav">
 <ul>
 
-    <li><span class="dropbtn">Playable characters</span></li>
-    <li><a target="_blank" href="d1oj5xj-975c3021-f5a5-45eb-b692-a89814fecf97.jpg"> Map of Silent Hill</a></li>
+    <li><div class="dropdown"><span class="dropbtn">Playable characters</span><div class="dropdown-content">
+        <a href="#">Harry Mason</a>
+        <a href="#">James Sunderland</a>
+        <a href="#">Heather Mason</a>
+      </div></div></li>
+    <li><a target="_blank" href="d1oj5xj-975c3021-f5a5-45eb-b692-a89814fecf97.jpg">Map of Silent Hill</a></li>
 </ul>
 </nav>
 </div>
-
 <div class="container">
     
 <div class="firstT">
